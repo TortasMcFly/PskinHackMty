@@ -1,32 +1,21 @@
 ﻿<Properties StartupConfiguration="{13098C6A-A70B-42FC-A5F7-16056AADA891}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pskin.iOS/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pskin/Views/Home/EditProfilePage.xaml.cs">
     <Files>
-      <File FileName="Pskin/Views/Fragments/HistoriasView.xaml.cs" Line="44" Column="72" />
-      <File FileName="Pskin/Views/Home/HomePage.xaml.cs" Line="20" Column="13" />
-      <File FileName="Pskin/Views/Templates/HistoriaTemplate.xaml" Line="21" Column="17" />
-      <File FileName="Pskin/API/PskinAPI.cs" Line="135" Column="16" />
-      <File FileName="Pskin/Views/Home/ProfilePage.xaml.cs" Line="105" Column="33" />
-      <File FileName="Pskin/Views/Fragments/AddPostView.xaml" Line="71" Column="25" />
-      <File FileName="Pskin/Views/Fragments/HistoriasView.xaml" Line="1" Column="39" />
-      <File FileName="Pskin/Views/Home/NuevaHistoriaPage.xaml" Line="16" Column="60" />
-      <File FileName="Pskin/Views/Home/NuevaHistoriaPage.xaml.cs" Line="105" Column="1" />
-      <File FileName="Pskin/Views/Login/SubirFotoPage.xaml" Line="1" Column="39" />
-      <File FileName="Pskin/Utils/Util.cs" Line="23" Column="47" />
-      <File FileName="Pskin/Views/Fragments/AddPostView.xaml.cs" Line="90" Column="1" />
-      <File FileName="Pskin/Views/Login/LoginPage.xaml" Line="41" Column="261" />
-      <File FileName="Pskin/App.xaml" Line="7" Column="43" />
-      <File FileName="Pskin/Utils/Camara.cs" Line="74" Column="17" />
-      <File FileName="Pskin.iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="Pskin.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="Pskin/Views/Home/CambiarFotoPage.xaml" Line="42" Column="56" />
+      <File FileName="Pskin/Views/Login/SubirFotoPage.xaml" Line="71" Column="9" />
+      <File FileName="Pskin/Views/Home/CambiarFotoPage.xaml.cs" Line="36" Column="15" />
+      <File FileName="Pskin/Views/Home/HomePage.xaml.cs" Line="91" Column="17" />
+      <File FileName="Pskin/Views/Home/ProfilePage.xaml" Line="54" Column="105" />
+      <File FileName="Pskin/Views/Home/EditProfilePage.xaml.cs" Line="41" Column="15" />
+      <File FileName="Pskin/Views/Login/SubirFotoPage.xaml.cs" Line="85" Column="14" />
+      <File FileName="Pskin/Views/Home/EditProfilePage.xaml" Line="36" Column="47" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Pskin" expanded="True">
             <Node name="Pskin" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
+              <Node name="Dependencies" expanded="True" />
               <Node name="API" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Utils" expanded="True" />
@@ -36,8 +25,8 @@
                   <Node name="HistoriasView.xaml" expanded="True" />
                 </Node>
                 <Node name="Home" expanded="True">
+                  <Node name="EditProfilePage.xaml.cs" selected="True" />
                   <Node name="HomePage.xaml" expanded="True" />
-                  <Node name="NuevaHistoriaPage.xaml" expanded="True" />
                   <Node name="ProfilePage.xaml" expanded="True" />
                 </Node>
                 <Node name="Login" expanded="True">
@@ -45,21 +34,14 @@
                 </Node>
                 <Node name="Templates" expanded="True">
                   <Node name="HistoriaTemplate.xaml" expanded="True" />
-                  <Node name="PostTemplate.xaml" expanded="True" />
                 </Node>
               </Node>
               <Node name="App.xaml" expanded="True" />
               <Node name="MainPage.xaml" expanded="True" />
             </Node>
-            <Node name="Pskin.Android" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="drawable" expanded="True" />
-                <Node name="values" expanded="True" />
-              </Node>
-            </Node>
+            <Node name="Pskin.Android" expanded="True" />
             <Node name="Pskin.iOS" expanded="True">
               <Node name="Resources" expanded="True" />
-              <Node name="Main.cs" selected="True" />
             </Node>
           </Node>
         </State>

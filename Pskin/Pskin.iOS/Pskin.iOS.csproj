@@ -204,6 +204,7 @@
     <BundleResource Include="Resources\publicar.png" />
     <BundleResource Include="Resources\camerawhite.png" />
     <BundleResource Include="Resources\galeria.png" />
+    <BundleResource Include="Resources\delete.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Renders\" />

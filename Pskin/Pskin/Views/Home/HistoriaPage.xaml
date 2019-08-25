@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Pskin.Views.Home.HistoriaPage"
+    xmlns:local="clr-namespace:Pskin.Renders;assembly=Pskin"
+    BackgroundColor="White"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="False">
+    <ContentPage.Content>
+        <Grid x:Name="GridContent">
+        
+            <Frame x:Name="frame1" CornerRadius="0"  IsClippedToBounds="true" HasShadow="true"
+                       Padding="0"  >
+                    <Grid x:Name="Grid" TranslationY="100">
+                        
+                        <Image x:Name="Imagen" Scale="0.6" Source="imagen4.jpg" Aspect="AspectFit" />
+                        <Image Source="footer" Aspect="Fill" Opacity="1"/>
+
+                        <Image x:Name="lblVolver" Source="back_red.png" 
+                       HorizontalOptions="Start" VerticalOptions="StartAndExpand" HeightRequest="30"
+                               Margin="20,50,0,0" />
+
+                        <StackLayout x:Name="StackPost" TranslationY="100" Margin="20,25" VerticalOptions="EndAndExpand" Padding="20,10" >
+                            <Label x:Name="username" Text="Hector Luevano"
+                                   FontAttributes="Bold"
+                                   FontSize="Large"
+                                   TextColor="White"/>
+                            <Label x:Name="descripcion" Text="I named this photo Neon Future. I realy love the combination of warm and cold colors."
+                                Margin="0,0,0,10"
+                                       TextColor="White"
+                                       FontFamily="{StaticResource Poppins}" 
+                                       FontSize="Medium" />
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                
+                                <StackLayout Orientation="Horizontal" Grid.Column="0">
+                                    <Image x:Name="tieneLike" Source="heart" HeightRequest="25" VerticalOptions="CenterAndExpand"/>
+                                    <Label x:Name="likes" Text="789" TextColor="White" VerticalOptions="CenterAndExpand"
+                                           FontFamily="{StaticResource PoppinsBold}"
+                                           FontSize="14"
+                                           FontAttributes="Bold"/>
+                                </StackLayout>
+                
+                                <Label x:Name="timeAgo" Text="Hace 1 día" Grid.Column="1"
+                                       TextColor="#ccc" VerticalOptions="CenterAndExpand" 
+                                       FontFamily="{StaticResource Poppins}" 
+                                       FontSize="14" HorizontalTextAlignment="End"
+                                       FontAttributes="Bold"/>
+                            </Grid>
+                        </StackLayout>
+                    </Grid>
+            </Frame>
+        
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

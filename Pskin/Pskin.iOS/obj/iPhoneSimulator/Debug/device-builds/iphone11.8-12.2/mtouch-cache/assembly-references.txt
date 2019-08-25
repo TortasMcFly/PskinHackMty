@@ -1,4 +1,4 @@
-/Users/hector/Projects/HackMty/Pskin/Pskin.iOS/bin/iPhoneSimulator/Debug/Pskin.iOS.exe
+/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.iOS/bin/iPhoneSimulator/Debug/Pskin.iOS.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.14.0.114/lib/mono/Xamarin.iOS/mscorlib.dll
 /Users/hector/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.14.0.114/lib/mono/Xamarin.iOS/Facades/netstandard.dll
@@ -21,7 +21,7 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.14.0.114/lib/mono/Xamarin.iOS/System.Xml.Linq.dll
 /Users/hector/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll
 /Users/hector/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll
-/Users/hector/Projects/HackMty/Pskin/Pskin/bin/Debug/netstandard2.0/Pskin.dll
+/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/bin/Debug/netstandard2.0/Pskin.dll
 /Users/hector/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
 /Users/hector/.nuget/packages/com.airbnb.xamarin.forms.lottie/3.0.0/lib/xamarinios10/Lottie.Forms.dll
 /Users/hector/.nuget/packages/com.airbnb.ios.lottie/2.5.8/lib/xamarinios10/Lottie.iOS.dll

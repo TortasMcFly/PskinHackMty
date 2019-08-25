@@ -87,6 +87,7 @@ namespace Pskin.Views.Fragments
             foreach(Historia h in historias)
             {
                 var item = new HistoriaTemplate(h);
+                item.BindingContext = h;
                 item.GestureRecognizers.Add(postTapGestureRecognizer);
                 StackContent.Children.Add(item);
             }
@@ -97,8 +98,12 @@ namespace Pskin.Views.Fragments
         {
             HistoriaTemplate post = (HistoriaTemplate)sender;
 
-            await Animacion.Seleccionar(post);
-            await Animacion.Deseleccionar(post);
+            Historia hSelected = (Historia)post.BindingContext;
+            Application.Current.Properties["Historia"] = JsonConvert.SerializeObject(hSelected);
+            await Application.Current.SavePropertiesAsync();
+
+
+            await Navigation.PushAsync(new HistoriaPage(), false);
         }
     }
 }

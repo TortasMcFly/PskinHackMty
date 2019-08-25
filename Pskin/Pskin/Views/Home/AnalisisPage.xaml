@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Pskin.Views.Home.AnalisisPage"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="True">
+    <ContentPage.Content>
+        <StackLayout x:Name="StackContenido" TranslationY="100">
+
+             <Image x:Name="lblVolver" Source="back_red.png" 
+                       HorizontalOptions="Start" VerticalOptions="StartAndExpand" HeightRequest="30"
+                               Margin="20,30,0,0" />
+
+            <Label  
+                   Text="Análisis" 
+                   HorizontalOptions="Start" 
+                   TextColor="Black" 
+                   FontAttributes="Bold" 
+                   FontSize="40" 
+                   Margin="20,0,0,0"
+                   FontFamily="{StaticResource Poppins}"/>
+            
+            <Label  x:Name="timeAgo"
+                   Text="Hace un momento" 
+                   HorizontalOptions="Start" 
+                   TextColor="Gray" 
+                   FontAttributes="Bold" 
+                   FontSize="16" 
+                   Margin="20,0,0,0"
+                   FontFamily="{StaticResource Poppins}"/>
+
+            <ScrollView>
+                <StackLayout
+                Margin="20,30,20,300"
+                VerticalOptions="StartAndExpand">
+                
+                <Frame x:Name="frame1"  Scale="0.5" HeightRequest="300" CornerRadius="10" IsClippedToBounds="true" HasShadow="true"
+                       Padding="0"  >
+                    <Grid>
+                        <Image x:Name="Image" Source="footer" Aspect="AspectFill" Opacity="1"/>
+                        <BoxView Color="Black" Opacity="0.1"/>
+                        
+                    </Grid>
+                </Frame>
+                
+               <StackLayout x:Name="AreaResultados" TranslationY="100" IsVisible="true" Spacing="0">
+                    <Label  
+                       Text="Resultados del análisis" 
+                       HorizontalOptions="Start" 
+                       TextColor="Gray" 
+                       FontAttributes="Bold" 
+                       FontSize="16" 
+                       Margin="20,10,0,0"
+                       FontFamily="{StaticResource Poppins}"/> 
+                        
+                        <Label  
+                        x:Name="lblTag"
+                       Text="Acné" 
+                       HorizontalOptions="Start" 
+                       TextColor="Black" 
+                       FontAttributes="Bold" 
+                       FontSize="25" 
+                       Margin="20,0,0,0"
+                       FontFamily="{StaticResource Poppins}"/>
+                        
+                    <Label  
+                            x:Name="lblPorcentaje"
+                       Text="87%" 
+                       TextColor="Black" 
+                       FontAttributes="Bold" 
+                       FontSize="70" 
+                       Margin="20,0,0,0"
+                       FontFamily="{StaticResource Poppins}"/>
+                        
+                    
+                </StackLayout>
+                
+            </StackLayout>
+            </ScrollView>
+            
+                
+            
+         </StackLayout>
+            
+    </ContentPage.Content>
+</ContentPage>

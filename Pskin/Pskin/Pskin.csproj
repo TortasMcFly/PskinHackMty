@@ -20,4 +20,9 @@
   <ItemGroup>
     <Folder Include="API\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Home\AnalisisPage.xaml.cs">
+      <DependentUpon>AnalisisPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

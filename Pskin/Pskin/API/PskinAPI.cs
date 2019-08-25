@@ -217,6 +217,35 @@ namespace Pskin.API
 
         //-----Perfil--------
         //Editar perfil
+        public static async Task<bool> EditarPerfil(string jsonUsr)
+        {
+
+            try
+            {
+                var request = new HttpRequestMessage(HttpMethod.Post, new Uri(Urlbase + "Usuarios/Actualizar"));
+                request.Headers.Add("Usuario", jsonUsr);
+
+                var response = await Client.SendAsync(request);
+                string Json = response.Content.ReadAsStringAsync().Result;
+
+                if (!response.IsSuccessStatusCode)
+                    return false;
+
+
+                Debug.WriteLine(Json);
+
+                Application.Current.Properties["Usuario"] = Json;
+                await Application.Current.SavePropertiesAsync();
+
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Error en el login: " + ex.ToString());
+                return false;
+            }
+        }
         //Cambiar imágen
 
 

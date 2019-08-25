@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hector/Projects/HackMty/Pskin/Pskin.iOS/Pskin.iOS.csproj": {}
+    "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.iOS/Pskin.iOS.csproj": {}
   },
   "projects": {
-    "/Users/hector/Projects/HackMty/Pskin/Pskin.iOS/Pskin.iOS.csproj": {
+    "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.iOS/Pskin.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hector/Projects/HackMty/Pskin/Pskin.iOS/Pskin.iOS.csproj",
+        "projectUniqueName": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.iOS/Pskin.iOS.csproj",
         "projectName": "Pskin.iOS",
-        "projectPath": "/Users/hector/Projects/HackMty/Pskin/Pskin.iOS/Pskin.iOS.csproj",
+        "projectPath": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.iOS/Pskin.iOS.csproj",
         "packagesPath": "/Users/hector/.nuget/packages/",
-        "outputPath": "/Users/hector/Projects/HackMty/Pskin/Pskin.iOS/obj/",
+        "outputPath": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.iOS/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -26,8 +26,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "/Users/hector/Projects/HackMty/Pskin/Pskin/Pskin.csproj": {
-                "projectPath": "/Users/hector/Projects/HackMty/Pskin/Pskin/Pskin.csproj"
+              "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/Pskin.csproj": {
+                "projectPath": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/Pskin.csproj"
               }
             }
           }
@@ -71,14 +71,14 @@
         }
       }
     },
-    "/Users/hector/Projects/HackMty/Pskin/Pskin/Pskin.csproj": {
+    "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/Pskin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hector/Projects/HackMty/Pskin/Pskin/Pskin.csproj",
+        "projectUniqueName": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/Pskin.csproj",
         "projectName": "Pskin",
-        "projectPath": "/Users/hector/Projects/HackMty/Pskin/Pskin/Pskin.csproj",
+        "projectPath": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/Pskin.csproj",
         "packagesPath": "/Users/hector/.nuget/packages/",
-        "outputPath": "/Users/hector/Projects/HackMty/Pskin/Pskin/obj/",
+        "outputPath": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

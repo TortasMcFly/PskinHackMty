@@ -18,9 +18,34 @@ namespace Pskin.Views.Home
 
             NavigationPage.SetHasNavigationBar(this, false);
 
+            //Volver
             var gestureVolver = new TapGestureRecognizer();
             gestureVolver.Tapped += GestureVolver_Tapped;
             lblVolver.GestureRecognizers.Add(gestureVolver);
+
+            //Inicializa la animacion de los botones editar, congifuracion y más
+            //Hace la animacion de seleccion a los siguientes botones
+            var gestureBtnEditarPerfil = new TapGestureRecognizer();
+            gestureBtnEditarPerfil.Tapped += GestureBtnEditarPerfil_Tapped;
+            btnEditarPerfil.GestureRecognizers.Add(gestureBtnEditarPerfil);
+
+            var gestureBtnConfiguracion = new TapGestureRecognizer();
+            gestureBtnConfiguracion.Tapped += GestureBtnConfiguracion_Tapped;
+            btnConfiguracion.GestureRecognizers.Add(gestureBtnConfiguracion);
+
+            var gestureBtnMas = new TapGestureRecognizer();
+            gestureBtnMas.Tapped += GestureBtnMas_Tapped;
+            btnMas.GestureRecognizers.Add(gestureBtnMas);
+
+            //Animacion para el FramePost 
+            var gestureFramePost = new TapGestureRecognizer();
+            gestureFramePost.Tapped += GesturePost_Tapped;
+            FramePost.GestureRecognizers.Add(gestureFramePost);
+
+            //Animacion selecciona para la camara
+            var gestureCamera = new TapGestureRecognizer();
+            gestureCamera.Tapped += GestureCamera_Tapped;
+            cameraPost.GestureRecognizers.Add(gestureCamera);
 
             //GridContent.Opacity = 0;
             GetUser();
@@ -127,15 +152,72 @@ namespace Pskin.Views.Home
 
             Foto f = (Foto)post.BindingContext;
 
-            /*if (f.EsAnalisis)
+            if (f.EsAnalisis)
             {
+                Analisis aSelected = user.Galeria.Analisis.Find(x => x.Id == f.Id);
+                
+                Application.Current.Properties["Analisis"] = JsonConvert.SerializeObject(aSelected);
+                await Application.Current.SavePropertiesAsync();
 
+                await Navigation.PushAsync(new AnalisisPage(), false);
             }
             else
             {
+                Historia hSelected = user.Galeria.Historias.Find(x => x.Id == f.Id);
+                hSelected.Usuario = new Usuario
+                {
+                    Id = user.Id,
+                    Nombre = user.Nombre,
+                    Apellido = user.Apellido
+                };
+                Application.Current.Properties["Historia"] = JsonConvert.SerializeObject(hSelected);
+                await Application.Current.SavePropertiesAsync();
 
-            }*/
+                await Navigation.PushAsync(new HistoriaPage(), false);
+            }
 
+        }
+
+        async void GestureBtnEditarPerfil_Tapped(object sender, System.EventArgs e)
+        {
+
+            await Animacion.Seleccionar(btnEditarPerfil);
+            await Animacion.Deseleccionar(btnEditarPerfil);
+
+            await Navigation.PushAsync(new EditProfilePage());
+
+        }
+
+        async void GestureBtnConfiguracion_Tapped(object sender, System.EventArgs e)
+        {
+
+            await Animacion.Seleccionar(btnConfiguracion);
+            await Animacion.Deseleccionar(btnConfiguracion);
+
+
+        }
+
+        async void GestureBtnMas_Tapped(object sender, System.EventArgs e)
+        {
+
+            await Animacion.Seleccionar(btnMas);
+            await Animacion.Deseleccionar(btnMas);
+
+
+        }
+
+        async void GestureCamera_Tapped(object sender, System.EventArgs e)
+        {
+
+            await Animacion.Seleccionar(cameraPost);
+            await Animacion.Deseleccionar(cameraPost);
+
+        }
+
+        async void GesturePost_Tapped(object sender, System.EventArgs e)
+        {
+            await Animacion.Seleccionar(FramePost);
+            await Animacion.Deseleccionar(FramePost);
         }
 
     }

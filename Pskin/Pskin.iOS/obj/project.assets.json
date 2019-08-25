@@ -1435,11 +1435,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hector/Projects/HackMty/Pskin/Pskin.iOS/Pskin.iOS.csproj",
+      "projectUniqueName": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.iOS/Pskin.iOS.csproj",
       "projectName": "Pskin.iOS",
-      "projectPath": "/Users/hector/Projects/HackMty/Pskin/Pskin.iOS/Pskin.iOS.csproj",
+      "projectPath": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.iOS/Pskin.iOS.csproj",
       "packagesPath": "/Users/hector/.nuget/packages/",
-      "outputPath": "/Users/hector/Projects/HackMty/Pskin/Pskin.iOS/obj/",
+      "outputPath": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1454,8 +1454,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/hector/Projects/HackMty/Pskin/Pskin/Pskin.csproj": {
-              "projectPath": "/Users/hector/Projects/HackMty/Pskin/Pskin/Pskin.csproj"
+            "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/Pskin.csproj": {
+              "projectPath": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/Pskin.csproj"
             }
           }
         }

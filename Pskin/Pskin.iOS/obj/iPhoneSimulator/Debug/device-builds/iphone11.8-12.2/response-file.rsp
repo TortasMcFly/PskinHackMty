@@ -1,5 +1,5 @@
---cache=/Users/hector/Projects/HackMty/Pskin/Pskin.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/mtouch-cache
---sim=/Users/hector/Projects/HackMty/Pskin/Pskin.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/Pskin.iOS.app
+--cache=/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/mtouch-cache
+--sim=/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/Pskin.iOS.app
 --executable=Pskin.iOS
  --debug
  --sgen-conc
@@ -10,11 +10,11 @@
  --aot-options=-O=-float32
  --http-message-handler=NSUrlSessionHandler
  --abi=x86_64
---symbollist=/Users/hector/Projects/HackMty/Pskin/Pskin.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/mtouch-symbols.list
+--symbollist=/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/mtouch-symbols.list
  --dsym=no
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll
--r=/Users/hector/Projects/HackMty/Pskin/Pskin/bin/Debug/netstandard2.0/Pskin.dll
+-r=/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/bin/Debug/netstandard2.0/Pskin.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.dll
@@ -209,7 +209,7 @@
 -r=/Users/hector/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/hector/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/hector/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
--r=/Users/hector/Projects/HackMty/Pskin/Pskin/bin/Debug/netstandard2.0/Pskin.dll
+-r=/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/bin/Debug/netstandard2.0/Pskin.dll
  --target-framework=Xamarin.iOS,v1.0
---root-assembly=/Users/hector/Projects/HackMty/Pskin/Pskin.iOS/bin/iPhoneSimulator/Debug/Pskin.iOS.exe
+--root-assembly=/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.iOS/bin/iPhoneSimulator/Debug/Pskin.iOS.exe
  

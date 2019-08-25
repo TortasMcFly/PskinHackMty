@@ -749,11 +749,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hector/Projects/HackMty/Pskin/Pskin/Pskin.csproj",
+      "projectUniqueName": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/Pskin.csproj",
       "projectName": "Pskin",
-      "projectPath": "/Users/hector/Projects/HackMty/Pskin/Pskin/Pskin.csproj",
+      "projectPath": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/Pskin.csproj",
       "packagesPath": "/Users/hector/.nuget/packages/",
-      "outputPath": "/Users/hector/Projects/HackMty/Pskin/Pskin/obj/",
+      "outputPath": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

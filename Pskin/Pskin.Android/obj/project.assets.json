@@ -2269,11 +2269,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hector/Projects/HackMty/Pskin/Pskin.Android/Pskin.Android.csproj",
+      "projectUniqueName": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.Android/Pskin.Android.csproj",
       "projectName": "Pskin.Android",
-      "projectPath": "/Users/hector/Projects/HackMty/Pskin/Pskin.Android/Pskin.Android.csproj",
+      "projectPath": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.Android/Pskin.Android.csproj",
       "packagesPath": "/Users/hector/.nuget/packages/",
-      "outputPath": "/Users/hector/Projects/HackMty/Pskin/Pskin.Android/obj/",
+      "outputPath": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -2288,8 +2288,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "/Users/hector/Projects/HackMty/Pskin/Pskin/Pskin.csproj": {
-              "projectPath": "/Users/hector/Projects/HackMty/Pskin/Pskin/Pskin.csproj"
+            "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/Pskin.csproj": {
+              "projectPath": "/Users/hector/Documents/GitHub/PskinHackMty/Pskin/Pskin/Pskin.csproj"
             }
           }
         }

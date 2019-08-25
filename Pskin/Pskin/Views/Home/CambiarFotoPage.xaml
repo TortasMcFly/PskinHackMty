@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:image="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             mc:Ignorable="d"
+             x:Class="Pskin.Views.Home.CambiarFotoPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true">
+
+        <Grid x:Name="GridContent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Image x:Name="lblVolver" Grid.Row="0" Source="back_red.png" 
+                   HorizontalOptions="Start" HeightRequest="30" Margin="20,30,0,0" />
+
+            <Label x:Name="lblHolaUser" Grid.Row="0" 
+                Margin="0,30,0,0"
+                Text="Hola Héctor" 
+                FontFamily="{StaticResource Poppins}" 
+                FontSize="24"
+                TextColor="Black"
+                HorizontalOptions="Center"/>
+
+
+
+        <StackLayout Grid.Row="1" >
+
+            <Label x:Name="lblUsername" Grid.Row="0" 
+                   
+                   Text="Cambiar foto de perfil" FontAttributes="Bold" 
+                            FontFamily="{StaticResource Poppins}" 
+                            TextColor="#bbb" 
+                            HorizontalOptions="Center" 
+                            FontSize="16" />
+
+            <StackLayout HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand">
+                <image:CircleImage x:Name="profileImage" Source="usrprofile.jpg" Aspect="AspectFill" 
+                               HeightRequest="260" WidthRequest="260"
+                               Margin="0,30,0,0"
+                               FillColor="{StaticResource Primary}"/>
+
+                <StackLayout Orientation="Horizontal" Margin="0,15,0,0" HorizontalOptions="CenterAndExpand">
+                    <Button Text="Subir foto" FontAttributes="Bold" FontFamily="{StaticResource Poppins}" BackgroundColor="{StaticResource Primary}" 
+                    FontSize="Medium"  HorizontalOptions="Center"
+                    TextColor="White" BorderRadius="20"  Padding="20,0,30,0" 
+                    Clicked="Subir_Clicked"
+                    />
+
+                    <Button Text="Galeria" FontAttributes="Bold" FontFamily="{StaticResource Poppins}" BackgroundColor="{StaticResource Primary}" 
+                    FontSize="Medium" HorizontalOptions="Center"
+                    TextColor="White" BorderRadius="20"  Padding="20,0,30,0" 
+                            Clicked="Galeria_Clicked"
+                    />
+                </StackLayout>
+
+            </StackLayout>
+
+            <Button x:Name="btnGuardar" Text="Guardar imagen" Opacity="1" FontAttributes="Bold" FontFamily="{StaticResource Poppins}" BackgroundColor="White" 
+                    FontSize="Medium" HorizontalOptions="Center" VerticalOptions="EndAndExpand"
+                    TextColor="{StaticResource Primary}" BorderRadius="20" Padding="20,0,30,0" Margin="20,30"
+                    Clicked="Guardar_Clicked"
+                    />
+
+
+        </StackLayout>
+
+
+        </Grid>
+        
+</ContentPage>
