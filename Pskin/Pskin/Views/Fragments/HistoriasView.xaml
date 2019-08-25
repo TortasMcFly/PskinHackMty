@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pskin.Views.Fragments.HistoriasView"
+             BackgroundColor="White"
+             xmlns:local="clr-namespace:Pskin.Renders;assembly=Pskin"
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             VerticalOptions="FillAndExpand"
+             HorizontalOptions="FillAndExpand">
+    <ContentView.Content>
+        <ScrollView>
+            <StackLayout>
+                
+                <Label  
+                       Text="Inicio" 
+                       HorizontalOptions="Start" 
+                       TextColor="Black" 
+                       FontAttributes="Bold" 
+                       FontSize="40" 
+                       Margin="20,0,0,0"
+                       FontFamily="{StaticResource Poppins}"/>
+                
+                <Frame x:Name="FramePost" Margin="20,10" Padding="20,10" HasShadow="false" CornerRadius="20" BackgroundColor="#f8f8f8">
+                    <StackLayout Spacing="0" Orientation="Horizontal">
+                       
+                        <Label x:Name="lblPost" Text="¿Qué hay de nuevo?" TextColor="Gray" FontSize="15" FontFamily="{StaticResource Poppins}">
+                        </Label>
+                        <Image x:Name="cameraPost" Source="camera" HeightRequest="24" HorizontalOptions="EndAndExpand">
+                        </Image>
+                    </StackLayout>
+                </Frame>
+                
+            
+               <StackLayout x:Name="StackContent"
+                    VerticalOptions="FillAndExpand" 
+                    HorizontalOptions="FillAndExpand" Margin="0,0,0,80">
+                    
+                    <lottie:AnimationView
+                        Opacity="0.5"
+                    InputTransparent="true"
+                    TranslationY="-40"
+                    Margin="20,0"
+                     x:Name="loadView" 
+                        
+                     Animation="post-loading.json" 
+                     Loop="True" 
+                     AutoPlay="true"
+                     VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand" />
+                    
+                </StackLayout>
+                
+             </StackLayout>
+        </ScrollView>
+        
+    </ContentView.Content>
+</ContentView>

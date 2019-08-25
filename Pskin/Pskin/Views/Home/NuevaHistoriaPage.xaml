@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Pskin.Views.Home.NuevaHistoriaPage"
+    xmlns:local="clr-namespace:Pskin.Renders;assembly=Pskin"
+    BackgroundColor="White"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="False">
+    <ContentPage.Content>
+        <Grid x:Name="GridContent">
+        
+            <Frame x:Name="frame1" CornerRadius="0"  IsClippedToBounds="true" HasShadow="true"
+                       Padding="0"  >
+                    <Grid>
+                        <Image Source="footer" Aspect="Fill" Opacity="0.9"/>
+                        <Image x:Name="Imagen"  Aspect="AspectFit" Opacity="1"/>
+
+                        <Label x:Name="lblInfo" HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               TextColor="#777"
+                               FontFamily="{StaticResource Poppins}">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Sube una foto a tu "/>
+                                    <Span Text="historia" FontAttributes="Bold"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Image x:Name="lblVolver" Source="back_red.png" 
+                       HorizontalOptions="Start" VerticalOptions="StartAndExpand" HeightRequest="30"
+                               Margin="20,50,0,0" />
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand">
+                            <Image x:Name="Galeria" Source="galeria.png" Margin="0,50,15,0"
+                             HeightRequest="30"
+                                />
+
+                            <Image x:Name="Camera" Source="camera.png" Margin="0,50,20,0"
+                             HeightRequest="30"
+                                />
+                        </StackLayout>
+
+                        <Frame x:Name="FramePost" Margin="20,25" VerticalOptions="EndAndExpand" Padding="20,10" HasShadow="false" CornerRadius="20" BackgroundColor="#f8f8f8">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <local:CustomEntry Grid.Column="0" x:Name="entry"  Placeholder="¿Qué hay de nuevo?" TextColor="Black" PlaceholderColor="Gray" FontSize="15" FontFamily="{StaticResource Poppins}">
+                                </local:CustomEntry>
+
+                                <Image Grid.Column="1" x:Name="publicar" Source="publicar" HeightRequest="24" >
+                                </Image>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+            </Frame>
+        
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

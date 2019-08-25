@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Pskin.Views.Fragments.AddPostView"
+             BackgroundColor="White"
+             xmlns:local="clr-namespace:Pskin.Renders;assembly=Pskin"
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             VerticalOptions="FillAndExpand"
+             HorizontalOptions="FillAndExpand">
+    <ContentView.Content>
+        
+       
+            <StackLayout>
+                
+            <Label  
+                   Text="Nuevo análisis" 
+                   HorizontalOptions="Start" 
+                   TextColor="Black" 
+                   FontAttributes="Bold" 
+                   FontSize="40" 
+                   Margin="20,0,0,0"
+                   FontFamily="{StaticResource Poppins}"/>
+            
+            <Label  
+                   Text="Sube una nueva imágen para analizar tu piel" 
+                   HorizontalOptions="Start" 
+                   TextColor="Gray" 
+                   FontAttributes="Bold" 
+                   FontSize="16" 
+                   Margin="20,0,0,0"
+                   FontFamily="{StaticResource Poppins}"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Subir foto" FontAttributes="Bold" FontFamily="{StaticResource Poppins}" BackgroundColor="{StaticResource Primary}" FontSize="Medium" Margin="20,5,0,0"
+                    TextColor="White" BorderRadius="20" HorizontalOptions="Start" Padding="20,0,30,0" Clicked="Subir_Clicked"
+                    />
+                <Button Text="Galeria" FontAttributes="Bold" FontFamily="{StaticResource Poppins}" BackgroundColor="{StaticResource Primary}" FontSize="Medium" Margin="10,5,0,0"
+                    TextColor="White" BorderRadius="20" HorizontalOptions="Start" Padding="20,0,30,0" Clicked="Galeria_Clicked"
+                    />
+            </StackLayout>
+            
+            <ScrollView>
+                <StackLayout
+                Margin="20,30,20,300"
+                VerticalOptions="StartAndExpand">
+                
+                <Frame x:Name="frame1" HeightRequest="300" CornerRadius="10" IsClippedToBounds="true" HasShadow="true"
+                       Padding="0"  >
+                    <Grid>
+                        <Image x:Name="Image" Source="footer" Aspect="AspectFill" Opacity="0.5"/>
+                        <BoxView Color="Black" Opacity="0.1"/>
+                        
+                        <Label x:Name="iconPlus" Text="+" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                               TextColor="Gray" FontSize="50"/>
+                        
+                        <Frame x:Name="BtnAnalizar" IsVisible="false"
+                            
+                            BackgroundColor="White" CornerRadius="20"
+                            HorizontalOptions="EndAndExpand" 
+                            VerticalOptions="EndAndExpand"
+                            Padding="20,10,30,10"
+                            Margin="30,20">
+                            
+                            <Label x:Name="lblAnalizar" Text="Analizar" FontAttributes="Bold" 
+                            FontFamily="{StaticResource Poppins}" 
+                            TextColor="{StaticResource Primary}" 
+                            FontSize="Medium" />
+                        </Frame>
+                        
+                    </Grid>
+                </Frame>
+                
+               <StackLayout x:Name="AreaResultados" IsVisible="true" Spacing="0">
+                    <Label  
+                       Text="Resultados del análisis" 
+                       HorizontalOptions="Start" 
+                       TextColor="Gray" 
+                       FontAttributes="Bold" 
+                       FontSize="16" 
+                       Margin="20,10,0,0"
+                       FontFamily="{StaticResource Poppins}"/> 
+                        
+                        <Label  
+                        x:Name="lblTag"
+                       Text="Acné" 
+                       HorizontalOptions="Start" 
+                       TextColor="Black" 
+                       FontAttributes="Bold" 
+                       FontSize="25" 
+                       Margin="20,0,0,0"
+                       FontFamily="{StaticResource Poppins}"/>
+                        
+                    <Label  
+                            x:Name="lblPorcentaje"
+                       Text="87%" 
+                       TextColor="Black" 
+                       FontAttributes="Bold" 
+                       FontSize="70" 
+                       Margin="20,0,0,0"
+                       FontFamily="{StaticResource Poppins}"/>
+                        
+                    
+                </StackLayout>
+                
+            </StackLayout>
+            </ScrollView>
+            
+                
+            
+         </StackLayout>
+            
+        
+        
+    </ContentView.Content>
+</ContentView>

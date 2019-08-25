@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Pskin.Views.Templates.PostTemplate">
+    <ContentView.Content>
+        <Frame x:Name="frame1" CornerRadius="10" IsClippedToBounds="true" HasShadow="true"
+                       Padding="0"  >
+            <Grid>
+                <Image x:Name="Image" Source="imagen.jpg" Aspect="AspectFill" Opacity="1"/>
+                <BoxView Color="Black" Opacity="0.2"/>
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>

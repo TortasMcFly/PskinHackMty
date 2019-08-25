@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Pskin.Views.Home.HomePage"
+             BackgroundColor="White"
+             xmlns:local="clr-namespace:Pskin.Renders;assembly=Pskin"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+              xmlns:image="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             ios:Page.UseSafeArea="true">
+    
+    <Grid x:Name="GridContent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        
+        <StackLayout Margin="20,20,20,10" Orientation="Horizontal">
+            <ImageButton x:Name="lblMenu" Grid.Row="0" Source="menu_red.png"
+                   HorizontalOptions="Start" HeightRequest="30" BackgroundColor="White" Clicked="Menu_Clicked" /> 
+            
+            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="EndAndExpand">
+                <Image x:Name="search" Source="search" HeightRequest="30" />
+                <image:CircleImage x:Name="profile" Source="imagen.jpg" Aspect="AspectFill" 
+                               HeightRequest="35" WidthRequest="35"/>
+                
+            </StackLayout>
+        </StackLayout>
+        
+        <StackLayout Grid.Row="1" x:Name="StackContent" VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"  Spacing="0">
+            
+            <!--<Label  
+                   Text="Historias" 
+                   HorizontalOptions="Start" 
+                   TextColor="Black" 
+                   FontAttributes="Bold" 
+                   FontSize="40" 
+                   Margin="20,0,0,0"
+                   FontFamily="{StaticResource Poppins}"/>
+            
+            <Frame x:Name="FramePost" Margin="20,10" Padding="20,10" HasShadow="false" CornerRadius="20" BackgroundColor="#f8f8f8">
+                <StackLayout Spacing="0" Orientation="Horizontal">
+                   
+                    <Label x:Name="lblPost" Text="¿Qué hay de nuevo?" TextColor="Gray" FontSize="15" FontFamily="{StaticResource Poppins}">
+                    </Label>
+                    <Image x:Name="cameraPost" Source="camera" HeightRequest="24" HorizontalOptions="EndAndExpand">
+                    </Image>
+                </StackLayout>
+            </Frame>
+            
+            
+            <StackLayout
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand">
+                
+                <lottie:AnimationView
+                InputTransparent="true"
+                TranslationY="-40"
+                Margin="20,0"
+                 x:Name="loadView" 
+                 Animation="post-loading.json" 
+                 Loop="true" 
+                 AutoPlay="true"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand" />
+                
+            </StackLayout>
+            -->
+        
+        </StackLayout>
+        
+        <Frame Grid.Row="1"  VerticalOptions="EndAndExpand" Margin="20,10" Padding="20,10" CornerRadius="10" HasShadow="true" BackgroundColor="White">
+                
+                <StackLayout Spacing="0" Padding="20,10,20,0" Orientation="Horizontal" >
+                    <StackLayout x:Name="home" HorizontalOptions="StartAndExpand" Padding="20,0">
+                        <Image Source="home" HeightRequest="20"/>
+                        <Image x:Name="pointHome" Source="circle" HeightRequest="7"/>
+                    </StackLayout>
+                
+                    <StackLayout x:Name="add" HorizontalOptions="CenterAndExpand" Padding="20,0">
+                        <Image Source="add" HeightRequest="20" />
+                        <Image x:Name="pointAdd" Source="circle" HeightRequest="7" IsVisible="false"/>
+                    </StackLayout>
+                
+                    <StackLayout x:Name="favoritos" HorizontalOptions="EndAndExpand" Padding="20,0">
+                        <Image  Source="favoritos" HeightRequest="20"/>
+                        <Image x:Name="pointFavoritos" Source="circle" HeightRequest="7" IsVisible="false"/>
+                    </StackLayout>
+                
+                </StackLayout>
+            </Frame>
+    </Grid>
+    
+</ContentPage>
+

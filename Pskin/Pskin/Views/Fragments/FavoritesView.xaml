@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Pskin.Views.Fragments.FavoritesView"
+             BackgroundColor="White"
+             xmlns:local="clr-namespace:Pskin.Renders;assembly=Pskin"
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             VerticalOptions="FillAndExpand"
+             HorizontalOptions="FillAndExpand">
+    <ContentView.Content>
+        <StackLayout>
+                
+            <Label  
+                   Text="Favoritos" 
+                   HorizontalOptions="Start" 
+                   TextColor="Black" 
+                   FontAttributes="Bold" 
+                   FontSize="40" 
+                   Margin="20,0,0,0"
+                   FontFamily="{StaticResource Poppins}"/>
+            
+            <Label  
+                   Text="No hay información para mostrar" 
+                   HorizontalOptions="Start" 
+                   TextColor="Gray" 
+                   FontAttributes="Bold" 
+                   FontSize="16" 
+                   Margin="20,0,0,0"
+                   FontFamily="{StaticResource Poppins}"/>
+            
+            
+           <StackLayout
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand">
+                
+                <lottie:AnimationView
+                InputTransparent="true"
+                Margin="20,0"
+                 x:Name="loadView" 
+                 Animation="empty.json" 
+                 Loop="true" 
+                 AutoPlay="true"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand" />
+                
+            </StackLayout>
+            
+         </StackLayout>
+    </ContentView.Content>
+</ContentView>
+

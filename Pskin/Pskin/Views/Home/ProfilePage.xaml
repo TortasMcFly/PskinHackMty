@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Pskin.Views.Home.ProfilePage"
+             BackgroundColor="White"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+              xmlns:image="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             
+             ios:Page.UseSafeArea="true">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid x:Name="GridContent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <Image x:Name="lblVolver" Grid.Row="0" Source="back_red.png" 
+                           HorizontalOptions="Start" HeightRequest="30" Margin="20,30,0,0" /> 
+                
+                
+                <StackLayout Grid.Row="1" Margin="20" Spacing="0" TranslationY="0">
+                        
+                    
+                    <image:CircleImage x:Name="profile" Source="imagen.jpg" Aspect="AspectFill" 
+                               HeightRequest="120" WidthRequest="120"
+                               Scale="0.4"
+                               TranslationX="130"
+                               TranslationY="-80"
+                               HorizontalOptions="Center" 
+                               VerticalOptions="EndAndExpand"/>
+                    
+                    <Label x:Name="lblName" Text="Héctor Luévano" FontAttributes="Bold" Margin="0,10,0,0"
+                            Scale="0.4"
+                            FontFamily="{StaticResource Poppins}" 
+                            TextColor="Black" 
+                            HorizontalOptions="Center" 
+                            FontSize="16" />
+                    
+                     <Label x:Name="lblUsername" Text="hecth77" FontAttributes="Bold" 
+                            Scale="0.4"
+                            FontFamily="{StaticResource Poppins}" 
+                            TextColor="#bbb" 
+                            HorizontalOptions="Center" 
+                            FontSize="13" />
+                    
+                    <StackLayout x:Name="StackAnim" Spacing="0" TranslationY="100">
+                        <StackLayout Orientation="Horizontal" Spacing="50"  Margin="0,25,0,10" HorizontalOptions="CenterAndExpand">
+                            <Image Source="edit" HeightRequest="40"/>
+                            <Image Source="options" HeightRequest="40"/>
+                            <Image Source="more" HeightRequest="40"/>
+                        </StackLayout>
+                        
+                        <Frame  x:Name="FramePost" Margin="0,20,0,10" Padding="20,10" HasShadow="false" 
+                               CornerRadius="20" BackgroundColor="#f8f8f8">
+                            <StackLayout Spacing="0" Orientation="Horizontal">
+                               
+                                <Label x:Name="lblPost" Text="¿Qué hay de nuevo?" TextColor="Gray" FontSize="15" FontFamily="{StaticResource Poppins}">
+                                </Label>
+                                <Image x:Name="cameraPost" Source="camera" HeightRequest="24" HorizontalOptions="EndAndExpand">
+                                </Image>
+                            </StackLayout>
+                        </Frame>
+                        
+                        <Label Text="Fotos" FontAttributes="Bold" Margin="10,10,0,10"
+                            FontFamily="{StaticResource Poppins}" 
+                            TextColor="Black" 
+                            HorizontalOptions="Start" 
+                            FontSize="26" />
+
+                         <Image x:Name="noInfo" IsVisible="false" Margin="30" Source="bg1"/>
+                        
+                        <Grid
+                            Padding="10"
+                            ColumnSpacing="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition
+                                    Width="*" />
+                                <ColumnDefinition
+                                    Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <!---Left Column Content -->
+                            <StackLayout
+                                x:Name="LeftColumn"
+                                TranslationY="100"
+                                Grid.Column="0" Padding="0">
+                            </StackLayout>
+
+                            <!-- Right Column Content-->
+                            <StackLayout
+                                x:Name="RightColumn"
+                                TranslationY="150"
+                                Grid.Column="1" Padding="0">
+                            </StackLayout>
+                        </Grid>
+                        
+                    </StackLayout>
+                    
+                </StackLayout>
+                
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

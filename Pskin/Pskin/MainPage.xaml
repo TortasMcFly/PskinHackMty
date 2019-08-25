@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:Pskin" 
+             x:Class="Pskin.MainPage"
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
+             BackgroundColor="White">
+    <ScrollView>
+        <Grid x:Name="GridContent">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            
+            <StackLayout Grid.Row="0" BackgroundColor="White" Spacing="0">
+                <!-- Place new controls here -->
+                <Label x:Name="lblLogo" 
+                       Text="Pskin" 
+                       HorizontalOptions="Start" 
+                       TextColor="Black" 
+                       FontAttributes="Bold" 
+                       FontSize="40" 
+                       Margin="20,30,0,0"
+                       FontFamily="{StaticResource Poppins}"/>
+                
+                <Label x:Name="lblSlogan" HorizontalOptions="Start" FontAttributes="Bold" FontSize="12" Margin="20,10,0,0" FontFamily="{StaticResource Poppins}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="S I M P L E . " TextColor="Black"/>
+                            <Span Text="C H I D O " TextColor="{StaticResource Primary}"/>
+                            <Span Text=". D I F E R E N T E ." TextColor="Black"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                
+                <Button x:Name="btnRegistrate" Clicked="Register" Text="Regístrate" FontFamily="{StaticResource Poppins}" FontSize="Medium" FontAttributes="Bold" BackgroundColor="{StaticResource Primary}" Margin="20,40,20,0"
+                        TextColor="White" BorderRadius="20"  HorizontalOptions="StartAndExpand" Padding="10,0"/>
+                
+                <lottie:AnimationView
+                Margin="20,0"
+                 x:Name="animationView" 
+                 Animation="astroskin.json" 
+                 Loop="true" 
+                 AutoPlay="true"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand" />
+                
+            </StackLayout>
+            
+            <StackLayout Grid.Row="1" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Padding="20,10,20,40" >
+                  <Label x:Name="lblYaTengoCuenta" HorizontalOptions="Start" FontAttributes="Bold" FontSize="15" FontFamily="{StaticResource Poppins}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Ya tengo una cuenta. " TextColor="Black"/>
+                            <Span x:Name="lblIniciarSesion" Text="Iniciar sesión" TextColor="{StaticResource Primary}" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </Grid>
+        
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Pskin.Views.Login.RegisterPage"
+             xmlns:local="clr-namespace:Pskin.Renders;assembly=Pskin"
+             BackgroundColor="White"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true">
+    <Grid x:Name="GridContent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <Image x:Name="lblVolver" Grid.Row="0" Source="back_red.png" 
+                   HorizontalOptions="Start" HeightRequest="30" Margin="20,30,0,0" /> 
+        
+        <StackLayout Grid.Row="1" x:Name="StackContent" VerticalOptions="StartAndExpand"  Spacing="0">
+            
+                
+            <Label  
+                   Text="Regístrate" 
+                   HorizontalOptions="Start" 
+                   TextColor="Black" 
+                   FontAttributes="Bold" 
+                   FontSize="40" 
+                   Margin="20,0,0,0"
+                   FontFamily="{StaticResource Poppins}"/>
+        
+            
+            <Frame  Margin="20,40,20,20" Padding="20,10" HasShadow="false" BackgroundColor="#f8f8f8" >
+                <Frame.CornerRadius>
+                    <OnPlatform x:TypeArguments="x:Single">
+                        <On Platform="iOS" Value="20"/>
+                        <On Platform="Android" Value="30"/>
+                    </OnPlatform>
+                </Frame.CornerRadius>
+                
+                <StackLayout Spacing="0">
+                    <Label Text="Nombre" TextColor="Gray" FontSize="11" FontFamily="{StaticResource Poppins}"/>
+                    <local:CustomEntry x:Name="Nombre" Placeholder="Escribe tu nombre" Keyboard="Text" FontFamily="{StaticResource Poppins}" PlaceholderColor="Gray" FontSize="15" TextColor = "Black" BackgroundColor="#f8f8f8" />
+                </StackLayout>
+            </Frame>
+            
+            <Frame  Margin="20,0,20,20" Padding="20,10" HasShadow="false" BackgroundColor="#f8f8f8" >
+                <Frame.CornerRadius>
+                    <OnPlatform x:TypeArguments="x:Single">
+                        <On Platform="iOS" Value="20"/>
+                        <On Platform="Android" Value="30"/>
+                    </OnPlatform>
+                </Frame.CornerRadius>
+                
+                <StackLayout Spacing="0">
+                    <Label Text="Apellido" TextColor="Gray" FontSize="11" FontFamily="{StaticResource Poppins}"/>
+                    <local:CustomEntry x:Name="Apellido" Placeholder="Escribe tu apellido" Keyboard="Text" FontFamily="{StaticResource Poppins}" PlaceholderColor="Gray" FontSize="15" TextColor = "Black" BackgroundColor="#f8f8f8" />
+                </StackLayout>
+            </Frame>
+            
+            <Frame  Margin="20,0,20,20" Padding="20,10" HasShadow="false" BackgroundColor="#f8f8f8" >
+                <Frame.CornerRadius>
+                    <OnPlatform x:TypeArguments="x:Single">
+                        <On Platform="iOS" Value="20"/>
+                        <On Platform="Android" Value="30"/>
+                    </OnPlatform>
+                </Frame.CornerRadius>
+                
+                <StackLayout Spacing="0">
+                    <Label Text="Email" TextColor="Gray" FontSize="11" FontFamily="{StaticResource Poppins}"/>
+                    <local:CustomEntry x:Name="Email" Placeholder="Example@gmail.com" Keyboard="Email" FontFamily="{StaticResource Poppins}" PlaceholderColor="Gray" FontSize="15" TextColor = "Black" BackgroundColor="#f8f8f8" />
+                </StackLayout>
+            </Frame>
+            
+             <Frame  Margin="20,0" Padding="20,10" HasShadow="false" BackgroundColor="#f8f8f8">
+                <Frame.CornerRadius>
+                    <OnPlatform x:TypeArguments="x:Single">
+                        <On Platform="iOS" Value="20"/>
+                        <On Platform="Android" Value="30"/>
+                    </OnPlatform>
+                </Frame.CornerRadius>
+                
+                <StackLayout Spacing="0">
+                    <Label  Text="Contraseña" TextColor="Gray" FontSize="11" FontFamily="{StaticResource Poppins}"/>
+                    <local:CustomEntry x:Name="Pass" Placeholder="Escribe tu contraseña" Keyboard="Text"  FontFamily="{StaticResource Poppins}" PlaceholderColor="Gray" FontSize="15" IsPassword="True" TextColor = "Black" BackgroundColor="#f8f8f8" />
+                </StackLayout>
+            </Frame>
+            
+            
+            <Button Text="Registrarme" FontAttributes="Bold" FontFamily="{StaticResource Poppins}" BackgroundColor="{StaticResource Primary}" FontSize="Medium" Margin="20,45,0,0"
+                    TextColor="White" BorderRadius="20" HorizontalOptions="Start" Padding="20,0,30,0" 
+                    Clicked="Registrar_Clicked"/>
+            
+        </StackLayout>
+        
+        <StackLayout Grid.Row="1" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Padding="20,10,20,40" >
+                  <Label x:Name="lblYaTengoCuenta" HorizontalOptions="Start" FontAttributes="Bold" FontSize="15" Margin="0,0,0,0" FontFamily="{StaticResource Poppins}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Ya tengo una cuenta. " TextColor="Black"/>
+                            <Span x:Name="lblIniciarSesion" Text="Iniciar sesión" TextColor="{StaticResource Primary}" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        
+    </Grid>
+</ContentPage>
